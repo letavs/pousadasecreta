@@ -4,118 +4,130 @@
 <head>
     <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet_default">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <title>Pousada Secreta</title>
 </head>
 
 <body>
-    <div>
-        <div>
-            <a href="#">Pousada <span>Secreta</span></a>
+    <div class="topo">
+        <div class="limitar-container container">
+            <a href="#" class="titulo">Pousada <span>Secreta</span></a>
+
             <div>
-                <a href="#sobre">Sobre</a>
-                <a href="#rota">Rota</a>
-                <a href="quartos.html" target="_blank">Quartos</a>
+                <a class="link" href="#sobre">Sobre</a>
+                <a class="link" href="#rota">Rota</a>
+                <a class="link" href="quartos.html">Quartos</a>
             </div>
         </div>
     </div>
 
     <div>
-        <div>
-            <img src="img-fundo.jpg" title="Angra dos Reis" alt="Angra dos Reis" />
-            <div>
+        <div class="titulo-site">
+            <div class="titulo-site-descricao">
                 <h1>Pousada Secreta</h1>
                 <p>A Pousada reservada em Angra dos Reis</p>
             </div>
         </div>
-        <div>
+
+        <div class="limitar-container titulo-box">
             <h2>Seja Bem-vindo(a)!</h2>
             <p>Relaxe em nossas acomodações e curta o melhor de Angra dos Reis</p>
             <p>Temos quartos para solteiro, casal ou família</p>
         </div>
-        <div>
-            <div>
-                <img src="quarto-solteiro1.jpg" title="Quarto Solteiro" alt="Quarto Solteiro" />
-                <a href="quartos.html" target="_blank">Quarto de Solteiro</a>
-            </div>
-            <div>
-                <img src="quarto-casal1.jpg" title="Quarto Casal" alt="Quarto Casal" />
-                <a href="quartos.html" target="_blank">Quarto de Casal</a>
-            </div>
-            <div>
-                <img src="quarto-familia1.jpg" title="Quarto Famíliar" alt="Quarto Famíliar" />
-                <a href="quartos.html" target="_blank">Quarto Famíliar</a>
-            </div>
+
+        <div class="quartos limitar-container">
+            <a href="quartos.html#solteiro" class="quarto">
+                <img src="assets/quarto-solteiro1.jpg" title="Quarto de solteiro" alt="Quarto de solteiro" />
+                <p>Quarto de Solteiro</p>
+            </a>
+
+            <a href="quartos.html#casal" class="quarto">
+                <img src="assets/quarto-casal1.jpg" title="Quarto de casal" alt="Quarto de casal" />
+                <p> Quarto de Casal</p>
+            </a>
+
+            <a href="quartos.html#familia" class="quarto">
+                <img src="assets/quarto-familia1.jpg" title="Quarto Família" alt="Quarto Família" />
+                <p>Quarto Famíliar</p>
+            </a>
         </div>
-        <div id="rota">
-            <h3>Rota</h3>
+
+        <div id="rota" class="limitar-container titulo-box">
+            <h2>Rota</h2>
             <p>Veja como chegar até a pousada</p>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.943303920158!2d-43.68303988522129!3d-22.952315045267135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bf086806d35d5%3A0x5d1bcb8554e2c233!2sR.%20123%20-%20Santa%20Cruz%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1618457593559!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
         </div>
-        <div id="sobre">
-            <div>
-                <h3>Sobre a Pousada</h3>
-                <p>Conheça um pouco sobre a nossa pousada</p>
-            </div>
-            <div>
-                <div>
-                    <h4>A pousada</h4>
+
+        <div class="container-rota">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.943303920158!2d-43.68303988522129!3d-22.952315045267135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bf086806d35d5%3A0x5d1bcb8554e2c233!2sR.%20123%20-%20Santa%20Cruz%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1618457593559!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div id="sobre" class="limitar-container titulo-box container-descricao">
+            <h2>Sobre a Pousada</h2>
+            <p>Conheça um pouco sobre a nossa pousada</p>
+        </div>
+
+        <div class="limitar-container descricoes">
+            <div class="descricao">
+                <div class="descricao-conteudo">
+                    <h3>A pousada</h3>
                     <p>A Pousada Dev dispõe de estacionamento privativo gratuito, piscina ao ar livre e bar.</p>
                 </div>
-                <img src="img1.jpg" title="A Pousada" alt="A Pousada" />
-                <div>
-                    <h4>Alimentação</h4>
-                    <p>A Pousada serve café da manhã em estilo continental ou buffet. Nossos restaurantes funcionam 24hs.
-                    </p>
+                <img class="descricao" src="assets/img1.jpg" title="Faixada" alt="Faixada" />
+            </div>
+
+            <div class="descricao">
+                <div class="descricao-conteudo">
+                    <h3>Alimentação</h3>
+                    <p>A Pousada serve café da manhã em estilo continental ou buffet. Nossos restaurantes funcionam 24hs.</p>
                 </div>
-                <img src="img3.jpg" title="Alimentação" alt="Alimentação" />
-                <div id="quartos">
-                    <h4>Nossos quartos</h4>
-                    <p>Os quartos possuem TV de tela plana a cabo, cozinha compacta e área para refeições. Além disso, as unidades da Pousada Dev contam om ar-condicionado
-                    </p>
+                <img class="descricao" src="assets/img3.jpg" title="Alimentação" alt="Alimentação" />
+            </div>
+
+            <div class="descricao">
+                <div class="descricao-conteudo">
+                    <h3>Nossos quartos</h3>
+                    <p>Os quartos possuem TV de tela plana a cabo, cozinha compacta e área para refeições. Além disso, as unidades da Pousada Dev contam om ar-condicionado</p>
                 </div>
-                <img src="img2.jpg" title="Nossos Quartos" alt="Nossos Quartos" />
-                <div>
-                    <h4>Recepção</h4>
+                <img class="descricao" src="assets/img2.jpg" title="Nossos Quartos" alt="Nossos Quartos" />
+            </div>
+
+            <div class="descricao">
+                <div class="descricao-conteudo">
+                    <h3>Recepção</h3>
                     <p>Nosso recepção fica aberta 24hs.</p>
                 </div>
-                <img src="img5.jpg" title="Recepção" alt="Recepção" />
+                <img class="descricao" src="assets/img5.jpg" title="Recepção" alt="Recepção" />
             </div>
         </div>
     </div>
 
-    <div>
-        <div>
-            <div>
-                <h5>Entre em contato conosco</h5>
+
+    <div class="rodape">
+        <div class="timitar-container rodape-container">
+            <div class="rodape-info">
+                <h4>Entre em contato conosco</h4>
             </div>
-            <div>
-                <a href="https://goo.gl/maps/a3397i9UEbhdSEMMA">
-                    <img src="icones/endereco.png" title="Icone endereco" alt="endereco">
-                    <p>
-                        Endereço Av. 123, 222 - Rio de Janeiro
-                    </p>
-                </a>
+
+            <a class="rodape-info rodape-link" target="_blank" href="https://goo.gl/maps/a3397i9UEbhdSEMMA">
+                <img class="rodape-icone" src="assets/icones/endereco.png" title="Ícone endereco" alt="endereco">
+                <p>Endereço Av. 123, 222 - Rio de Janeiro</p>
+            </a>
+
+            <div class="rodape-info">
+                <img class="rodape-icone" src="assets/icones/telefone.png" title="Telefone" alt="telefone" />
+                <p>Cel +5521000-00000</p>
             </div>
-            <div>
-                <img src="icones/telefone.png" title="Telefone" alt="telefone" />
-                <a href="tel:+552100000000">
-                    <p>Cel +5521000-00000</p>
-                </a>
+
+            <a class="rodape-info rodape-link" href="https://www.booking.com/" target="_blank">
+                <img class="rodape-icone" src="assets/icones/calendario.png" alt="calendario">
+                <p>Faça sua reserva pelo booking</p>
+            </a>
+
+            <div class="rodape-copright">
+                <p>© Copyright - PousadaDev</p>
             </div>
-            <div>
-                <img src="icones/calendario.png" alt="calendario">
-                <a href="https://www.booking.com/" target="_blank">
-                    <p>Faça sua reserva pelo booking</p>
-                </a>"
-            </div>
-        </div>
-        <div>
-            <p>Copyright - PousadaDev</p>
         </div>
     </div>
 
