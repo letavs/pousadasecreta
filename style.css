@@ -96,6 +96,12 @@ body {
     margin: 0 auto;
 }
 
+.container-rota {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .titulo-box {
     text-align: center;
     margin-bottom: 50px;
